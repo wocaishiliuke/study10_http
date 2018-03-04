@@ -4,13 +4,12 @@
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
-  
   <servlet>
-  	<servlet-name>request1Servlet</servlet-name>
-  	<servlet-class>com.study.http.Request1Servlet</servlet-class>
+    <servlet-name>request1Servlet</servlet-name>
+    <servlet-class>com.study.http.Request1Servlet</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>request1Servlet</servlet-name>
-	<url-pattern>/request1</url-pattern>
+    <servlet-name>request1Servlet</servlet-name>
+    <url-pattern>/request1</url-pattern>
   </servlet-mapping>
 </web-app>

@@ -49,7 +49,7 @@ public class Request1Servlet extends HttpServlet {
 		//2.2方式二：
 		Enumeration<String> headerNames = req.getHeaderNames();
 		while (headerNames.hasMoreElements()) {
-			String headerName = (String) headerNames.nextElement();
+			String headerName = headerNames.nextElement();
 			String headerValue = req.getHeader(headerName);
 			resp.getWriter().print(headerName + ": " + headerValue + "<br/>");
 		}

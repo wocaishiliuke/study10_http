@@ -39,7 +39,7 @@ public class Request2Servlet extends HttpServlet {
 		//1.2 方式二
 		Enumeration<String> parameterNames = req.getParameterNames();
 		while (parameterNames.hasMoreElements()) {
-			String param = (String) parameterNames.nextElement();
+			String param = parameterNames.nextElement();
 			String[] values = req.getParameterValues(param);
 			System.out.println(param + ": " + Arrays.toString(values));
 		}
