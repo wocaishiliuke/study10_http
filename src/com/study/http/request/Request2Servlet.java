@@ -1,4 +1,4 @@
-package com.study.http;
+package com.study.http.request;
 
 import java.io.IOException;
 import java.net.URLDecoder;

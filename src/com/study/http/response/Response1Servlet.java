@@ -1,4 +1,4 @@
-package com.study.http;
+package com.study.http.response;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletResponse;
  * @author zhouyu
  * @date 2018年3月4日 下午6:27:38
  */
-@WebServlet("/Request6Servlet")
-public class Request6Servlet extends HttpServlet {
+@WebServlet("/Response1Servlet")
+public class Response1Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
