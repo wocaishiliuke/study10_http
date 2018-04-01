@@ -20,6 +20,7 @@ import com.study.domain.Product;
 public class Request4Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
+	@SuppressWarnings("unchecked")
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		List<Product> list = (List<Product>)request.getAttribute("productList");

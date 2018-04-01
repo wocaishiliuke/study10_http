@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 public class Response2Servlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
+	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		//方式一：页面定时刷新
 		response.setContentType("text/html;charset=utf-8");

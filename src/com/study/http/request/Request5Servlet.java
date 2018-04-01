@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/request5Servlet")
 public class Request5Servlet extends HttpServlet {
+	private static final long serialVersionUID = 5092348049868748127L;
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

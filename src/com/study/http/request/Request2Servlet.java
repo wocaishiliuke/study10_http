@@ -23,6 +23,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name="request2Servlet", urlPatterns="/request2")
 public class Request2Servlet extends HttpServlet {
+	private static final long serialVersionUID = 8291839000769922658L;
 
 	//通过get.html提交访问该方法
 	@Override

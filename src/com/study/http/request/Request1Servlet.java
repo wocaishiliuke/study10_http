@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletResponse;
  * @date 2018年2月19日 下午9:57:09
  */
 public class Request1Servlet extends HttpServlet {
+	private static final long serialVersionUID = 3908187802385952552L;
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
