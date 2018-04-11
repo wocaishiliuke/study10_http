@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function _changeCode() {
+		var myCode = document.getElementById("myCode");
+		/**
+		* 换一张时，若请求地址不变，浏览器不会发请求
+		* 浏览器为了提高用户访问同一页面的速度，会对页面数据进行缓存
+		* 当url请求地址不变时，有时候会导致浏览器不发送请求，直接从缓存中读取之前的数据
+		*/
+		var d = new Date();
+		myCode.src = "/study10_http/request6Servlet?" + d.getMilliseconds();//秒不行，手速快的还是会有不发请求的情况
+	}
+
+</script>
+
+</head>
+<body>
+	请输入验证码<input type="text" name="form_validateCode"/>
+	<img id="myCode" src="/study10_http/request6Servlet" onclick="_changeCode()">
+	<a href="javascript:void(0)" onclick="_changeCode()">看不清，换一张</a>
+</body>
+</html>
